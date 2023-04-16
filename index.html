@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashutosh's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f0d884f97a.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    
+</head>
+
+<body>
+    <div id="home">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpeg" alt="" class="logo">
+                <ul id="tab">
+                    <li><a href="#home" onclick="closeit()">Home</a></li>
+                    <li><a href="#about" onclick="closeit()">About Me</a></li>
+                    <li><a href="#mywork" onclick="closeit()">My work</a></li>
+                    <li><a href="#certificate" onclick="closeit()">Certificates</a></li>
+                    <li><a href="#contact" onclick="closeit()">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+
+            <div class="head-text">
+                <p>Front-End Developer</p>
+                <h1>Hii,I'm <span> Ashutosh</span> <br>from Muzaffarnagar</h1>
+            </div>
+            <div class="top">
+                <a href="#home">&uarr; Top</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- About  -->
+    <div id="about">
+        <div class="container">
+            <div class="about-sec">
+                <div class="about-img">
+                    <img src="images/abt_img.png" alt="">
+                </div>
+
+
+                <div class="about-right">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Hii, I am Ashutosh from Muzaffarnagar,Uttar Pardesh. Currently i am pursuing Bachelor in
+                        computer application from meerut institute of technology,meerut.
+                        <br><br>
+                        I have  skills which include  C++, HTML, CSS, JavaScript, SQL , data structures and algorithms. 
+                        I am always striving to learn and improve my skills as a developer.
+                    </p>
+
+                    <div class="about-me-button">
+                        <button onclick="f1()" id="btn1">Skill</button>
+                        <button onclick="f2()" id="btn2">Experince</button>
+                        <button onclick="f3()" id="btn3">Education</button>
+                    </div>
+
+                    <div class="tab-contents" id="skill">
+
+                        <div>
+                            <span>C++</span>
+                            <span>Java</span>
+                            <span>Phython</span>
+                        </div>
+                        <div>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div>
+                            <span>SQL</span>
+                            <span>Tailwind CSS</span>
+                            <span>BootStrap</span>
+
+                        </div>
+                        <div>
+                            <span>Data Structures and algorithms</span>
+                            <span>Object Oriented Programming</span>
+                        </div>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <h2>TwoWaits Technologies pvt. ltd.</h2><br>
+                        <span>Intern as a DSA Scholar</span><br>
+                        <p>
+                            Acquired foundational knowledge in data structures,includeing arrays,stacks,queue and linked
+                            lists,througn an intership program with TwoWaits.
+                        </p>
+                        <p>
+                            This is a learning based intership program in which we have to learn DSA topics and also
+                            solve problem on them.
+                        </p>
+                    </div>
+                    <div class="tab-contents" id="education">
+
+                        <p><span>Bachelor in computer application</span><br> Meerut Institute of Technology,meerut<br>
+                            computer application <br>
+                        <p id="percentage">percentage
+                            :76.5</p>
+                        </p>
+                        <hr>
+                        <p><span>Inter School</span><br> Moon Light Public School,MZN<br>PCM <br>
+                        <p id="percentage">percentage:80.0</p>
+                        </p>
+                        <hr>
+                        <p><span>High School</span><br> Aarti Memorial Public School,MZN<br>PCM <br>
+                        <p id="percentage">percentage:72.2</p>
+                        </p>
+                        <hr>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="mywork">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+
+
+            <div class="work-block">
+                <div>
+                    <img src="images/youtube.jpg" alt="">
+                    <h2>Youtube Clone</h2>
+                    <p>A YouTube UI clone project using HTML, CSS, and JS involves replicating the visual design and
+                        layout of YouTube's user interface. It includes designing and coding elements such as the
+                        navigation bar, video player, search bar, and sidebar.<br><br>
+                    <h3>Technology used :- HTML CSS JavaScript</h3>
+                    </p>
+                    <a href="https://ashutosh021.github.io/Youtube-Clone/" target="_blank">See</a>
+                </div>
+                <div>
+                    <img src="images/rest.jpg" alt="">
+                    <h2>Restaurant UI</h2>
+                    <p>This project replicates the visual design and layout of a restaurant's interface. It includes
+                        elements such as menus,
+                        navigation bar and contact information. The project is user-friendly and responsive website.
+                        <br><br>
+                    <h3>Technology used :- HTML CSS </h3>
+                    </p>
+                    <a href="https://ashutosh021.github.io/Restaurant/" target="_blank">See</a>
+                </div>
+                <div>
+                    <img src="images/quiz.jpg" alt="">
+                    <h2>Quiz Game</h2>
+                    <p>GK Quiz project has series of
+                        multiple-choice questions related to general knowledge and mathematical questions , and the user
+                        has to choose the correct answer from the given options. The program also has an option to view the high scores. The
+                        program uses various functions such as edit_score, view_score, and gkquiz to implement the quiz
+                        game.<br><br>
+                    <h3>Technology used :- C++</h3>
+                    </p>
+                    <a href="https://replit.com/@mailashutosh246/Quiz-Game" target="_blank">See</a>
+                </div>
+            </div>
+            <a href="https://ashutosh021.github.io/projects/" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- certificates -->
+
+
+    <div id="certificate">
+        <div class="container">
+            <h1 class="sub-title">Certificates</h1>
+
+            <div class="certificate-block">
+                <div>
+                    <a href="https://www.sololearn.com/Certificate/CT-CGDEFRTN/png">
+                        <img src="images/cpp.png" alt="">
+                    </a>
+                    <p>C++</p>
+                    <p>Sololearn</p>
+                    <p>Issued : Sep 2022</p>
+
+                </div>
+                <div>
+                    <a href="https://files.codingninjas.in/certi_image278232266694708ce339418bc5cfc7350bf918.jpg">
+                        <img src="images/html2.jpg" alt="">
+                    </a>
+                    <p>Fundamentals of HTML</p>
+                    <p>Coding Ninjas</p>
+                    <p>Issued : Apr 2023</p>
+
+                </div>
+                <div>
+                    <a href="https://files.codingninjas.in/certi_image280797718fd982288afcde494f1e49192dd7a6.jpg">
+                        <img src="images/css2.jpg" alt="">
+                    </a>
+                    <p>Fundamentals of CSS</p>
+                    <p>Coding Ninjas</p>
+                    <p>Issued : Apr 2023</p>
+
+                </div>
+            </div>
+            <a href="https://ashutosh021.github.io/certificate/" class="btn">See more</a>
+        </div>
+    </div>
+    <!--  Contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="contact1">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-envelope"></i>&#160 mail.ashutosh246@gmail.com</p>
+                <p><i class="fa fa-phone"></i></i>&#160&#160<i class="fa-brands fa-whatsapp"></i> &#160 6398529296</p>
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/ashutosh-037463220" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Ashutosh021" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.codingninjas.com/codestudio/profile/552174a4-09c3-4c1b-91f0-3d85c5e9e36f"
+                        target="_blank"><img src="images/cn.jpg" alt=""></a>
+                    <a href="https://auth.geeksforgeeks.org/user/ashutoshbca2020" target="_blank"><img
+                            src="images/gfg.jpg" alt=""></a>
+                </div>
+                <a href="Ashutosh_Resume.pdf" download class="btn">Download CV</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>copyright @ Ashutosh. All Right Reserved</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

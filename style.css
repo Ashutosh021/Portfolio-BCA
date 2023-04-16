@@ -1,0 +1,527 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    background: #080808;
+    color: #fff;
+}
+.top a{
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 10%;
+    color: white;
+    background-color:#ff004f;
+    position:fixed;
+    right: 5px;
+    bottom: 10%;
+}
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .fas {
+    display: none;
+}
+
+.logo {
+    width: 150px
+}
+
+nav ul li {
+    display: inline-block;
+    /* we can use display -> flex */
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ff004f;
+}
+
+
+nav ul li a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.head-text p{
+    margin-top: 20%;
+    font-size: 2rem;
+}
+
+.head-text h1 {
+    font-size:2.5rem;
+    margin-top: 20px;
+}
+
+.head-text h1 span {
+    color: #ff004f;
+}
+
+
+/* About me */
+#about {
+    color: #ababaa;
+    align-items: center;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+
+
+.about-sec {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-img {
+    flex-basis: 35%;
+}
+
+.about-img img {
+    width: 80%;
+    border-radius: 15%;
+}
+
+.about-right {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.about-right p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+}
+
+
+.about-me-button {
+    display: flex;
+    margin-bottom: 20px;
+    width: 98%;
+
+}
+
+#btn1 {
+    background-color: white;
+    color: #ff004f;
+}
+
+.about-me-button button {
+    margin-top: 5%;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 1px solid white;
+    background-color: #ff004f;
+    color: white;
+    width: 34%;
+}
+
+.about-me-button button:hover {
+    background-color: white;
+    color: #ff004f;
+    border: 2px solid #ff004f;
+}
+
+#skill div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    font-size: 1.5rem;
+    color: #ff004f;
+}
+#skill div span{
+    padding: 10px;
+}
+
+
+
+#experience {
+    padding: 10px;
+}
+
+#experience span {
+    color: #ff004f;
+    font-size: 1.5rem;
+}
+
+#educaton .percentage{
+    color: aqua;
+}
+#experience p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    word-wrap: break-word;
+}
+
+#education p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#education p span {
+    color: #ff004f;
+    font-size: 1.5rem;
+
+}
+#percentage{
+
+    color: aqua;
+}
+#skill {
+    display: block;
+}
+
+#experience {
+    display: none;
+}
+
+#education {
+    display: none;
+}
+
+
+
+/* Work */
+#mywork {
+
+    width: 100%;
+    align-items: center;
+}
+
+#mywork .sub-title{
+    margin-bottom: 40px;
+}
+.work {
+    padding: 30px 20px;
+}
+
+.work-block {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin: 5px;
+}
+
+.work-block div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.work-block div p{
+    font-size: 1rem;
+}
+
+.work-block div img {
+    border-radius: 5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.work-block div a {
+    border: 1px solid white;
+    border-radius: 15%;
+    font-size: 20px;
+    padding: 10px;
+    width: 25%;
+    text-align: center;
+    margin-left: 35%;
+    background-color: #ff004f;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.work-block div a:hover {
+    color: #ff004f;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.work-block div:hover {
+    background-color: #ff004f;
+    transform: translate(10px);
+}
+
+.work-block div h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+/* certificate */
+#certificate {
+
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.sub-title{
+    margin-bottom: 30px;
+}
+
+.certificate-block {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+.certificate-block div {
+
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+}
+
+.certificate-block div img {
+    border-radius: 5%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.certificate-block div p{
+    padding: 5px;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+
+/* contact */
+.contact1 {
+    width: 100%;
+    margin-top: 5%;
+    align-items: center;
+    text-align: center;
+
+}
+
+.contact1 p {
+    margin-top: 30px;
+}
+
+.contact1 p i {
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icon {
+    margin-top: 30px;
+}
+
+
+
+.social-icon a {
+    font-size: 30px;
+    margin: 20px;
+}
+
+.social-icon a img {
+    width: 25px;
+}
+
+
+.btn {
+    cursor: pointer;
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition: background 0.5s;
+}
+
+.btn:hover {
+    background: #ff004f;
+}
+
+.footer {
+    text-align: center;
+    background: #262626;
+    padding: 10px;
+}
+
+
+@media only screen and (max-width : 950px) {
+
+
+    /* navbar */
+    nav .fas {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        transition: right 0.5s;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+    nav ul li a:hover {
+        cursor: pointer;
+        color: black;
+    }
+
+
+
+    #home {
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/background_2.png);
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+    .head-text{
+        margin-top: 60vh;
+    }
+    .head-text h1{
+        font-size: 30px;
+    }
+    .head-text p{
+        font-size: 18px;
+    }
+
+    #about {
+        height: 80%;
+        margin-bottom: 0;
+    }
+    .about-img {
+        flex-basis: 100%;
+        margin-bottom: 10%;
+    }
+    .about-right{
+        flex-basis: 100%;
+    }
+    .about-me-button button {
+        margin-top: 10%;
+        width: 30%;
+        padding: 7px;
+        font-size: 12px;
+    }
+    #skill div{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10%;
+        font-size: 1.2rem;
+        color: #ff004f;
+    }
+    
+    #skill div span{
+        padding: 10px;
+
+    }
+    #mywork {
+        margin-top: 5%;
+    }
+
+}
+
+
+@media only screen and (min-width : 550px ) and (max-width:1500px) {
+    #home {
+        width: 100%;
+        height: 100vh;
+        background-image: url(images/background_3.png);
+        background-size: cover;
+        background-position: center;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+ 
+}
+
+/* @media only screen and (min-width : 540px ) and (max-width:900px) {
+    #about{
+        border: 2px solid red;
+    }
+
+    .about-img {
+    }
+} */
